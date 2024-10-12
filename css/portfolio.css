@@ -1,0 +1,764 @@
+html {
+    scroll-behavior: smooth;
+}
+
+@font-face {
+    font-family: "GreatVibes-Regular";
+    src: url("../fonts/GreatVibes-Regular.ttf");
+}
+
+body {
+    background-color: #000000d5;
+    color: #adadad;
+    font-family: 'Nunito', sans-serif;
+    transition: .2s;
+} 
+
+a {
+    cursor: pointer;
+}
+
+p {
+    text-align: center;
+}
+
+p::selection {
+    color: black;
+    background-color: rgb(0, 255, 255);
+}
+
+   body > header {
+        margin: 0% 0%;
+   }
+
+    #subBody {
+        margin: 0% 7%;
+        transition: .3s;
+    }
+
+    #header {
+        padding: 5px 0px;
+        position: fixed;
+        top: 0%; left: 0%;
+        z-index: 1;
+        width: 100%;
+        background-color: #292929e8;
+        display: flex;
+        justify-content: space-between;
+        border-bottom-style: solid;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        transition: .3s ease;
+    }
+
+    header .myname {
+        position: relative;
+        left: 5px;
+        top: 7px;
+        font-size: 30px;
+    }
+    
+    header .myname a:hover {
+        color: aqua;
+        background-color: rgba(255, 255, 255, 0);
+    }
+
+
+    /* Left Header Section */
+    .leftheader {
+        display: flex;
+        transition: .2s;
+    }
+
+
+    .leftheader button {
+        display: none;
+        color: gray;
+        margin: 0px;
+        padding: 0px;
+        background-color: gray;
+        border-radius: 2px;
+    }
+
+    ul {
+        list-style-type: none;
+        display: flex;
+        margin-right: 5px;
+        position: relative;
+    }
+
+    li a {
+        color: white;
+        margin: 1rem auto;
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+    li a:hover, li svg:hover {
+        background-color: rgba(0, 0, 0, 0.445);   
+    }
+    
+    /* Theme Section */
+    #themeBox {
+        margin: 1rem 5px;
+        display: none;
+    }
+
+    li svg {
+        padding: 2px;
+    }
+
+    #themeBoxText {
+        position: absolute;
+        left: -30px;
+        top: -15px;
+        white-space: nowrap;
+        opacity: 0; /* Initially hidden */
+        transition: opacity 1s ease-in-out; /* 1-second transition for opacity */
+    }
+
+
+    /* Hamburger Section */
+    #hamBgercontainer {
+        z-index: 2;
+        position: absolute;
+        top: 20px;
+        left: 15px;
+    }
+
+    #hmbgerCheckbox {
+        display: none;
+    }
+
+    #hmbgrIcon {
+        display: none;
+        cursor: pointer;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+
+    .namm {
+        font-family: 'GreatVibes-Regular', sans-serif;
+        color: white;
+        font-weight: bold;
+        font-size: 3rem;
+    }
+
+
+
+/* Time Section */
+    #timeDiv {
+        margin-top: 100px;
+        position: relative;
+        text-align: right;
+        font-size: .8rem;
+        font-weight: 500;
+    }
+
+    #timeDiv div, #timeDiv p {
+        margin-right: 20px;
+        font-weight: bold;
+    }
+
+    #timeDiv p {
+        text-align: right;
+        font-weight: bold;
+    }
+
+    #timeDiv #hoverDateSection {
+        padding: 20px 10px;
+        background-color: #161616a1;
+        width: 150px;
+        position: absolute;
+        top: 10px;
+        right: 80px;
+        border-radius: 7px;
+        opacity: 0;
+        transition: .7s;
+    }
+
+    #timeDiv:hover  #hoverDateSection {
+        display: block;
+        opacity: 1;
+    }
+
+
+/* endOf Time Section */
+
+
+/* Content Section */
+
+        .heroImg {
+            width: 300px;
+            height: 300px;
+            object-fit: cover;
+            opacity: 0.7;  
+            border-radius: 50%;
+            border-style: solid;
+            box-shadow: 0 5px 10px -5px rgba(255, 255, 255, 1),
+                5px 0 10px -5px rgba(255, 255, 255, 0.75),
+                0 -5px 10px -5px rgba(255, 255, 255, 0.5),
+                -5px 0 10px -5px rgba(255, 255, 255, 0.25);      
+        }
+
+            .heroImg:hover {
+                opacity: 1;
+            }
+    
+        p {
+            margin-bottom: 10px;
+        }
+
+
+    .myjob {
+        display: flex;
+    }
+
+    .image {
+        margin: auto;
+        float: right;
+    }
+
+
+
+/* Technologies Section */
+#technologiesDiv {
+    display: flex;
+    font-weight: bold;
+}
+
+
+button, .homepage, .section a {
+    font-weight: bold;
+    font-size: medium;
+    color: black;
+    background-color: aqua;
+    border: 1px solid aqua;
+    border-radius: 25px;
+    padding: 10px ;
+    transition: .5s;
+    box-sizing: border-box;
+}
+
+.homepage, .section a {
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+button:hover, .homepage:hover, .section a:hover {
+    box-sizing: border-box;
+    background-color:black;
+    color: aqua;
+    border-style: solid;
+    border-color: aqua;
+    padding: 8px 10px 12px 10px;
+}
+
+button:active {
+    background-color:rgb(65, 65, 65);
+}
+
+
+/* Handling the scrolling margin */
+#about, #projectDiv, #contactDiv, #timeDiv {
+    scroll-margin-top: 130px;
+}
+
+/* About Section */
+
+#aboutImage {
+    float: right;
+}
+
+
+/* Project Section */
+
+.section {
+    display: flex;
+    justify-content: start;
+}
+
+.project_section {
+    display: grid;
+    grid-template-columns:  23.81%  23.81% 4.76% 23.81%  23.81%;
+    grid-template-rows: 50px 100px 100px 100px 50px;
+}
+
+    .projectImg  {
+        width: 380px;
+        height: 280px;
+        object-fit: contain;
+        display: flexbox;
+        flex-direction: column;
+        align-items: center;
+    }
+
+   /*  .project_section a {
+        grid-row-start: 5;
+    } */
+
+    #projectOne .projectDetails {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 5;
+    }
+
+    #projectOne img {
+        grid-column: span 2;
+        grid-row-start: 1;
+        grid-row-end: 5;
+    }
+
+    #projectTwo img {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 5;
+    }
+
+    #projectTwo .projectDetails {
+        grid-column: span 3;
+        grid-row-start: 1;
+        grid-row-end: 5;
+    }
+
+/* End of Project Section */
+
+
+/* Jokes Area */
+
+#jokesDiv button {
+    border-radius: 10px;
+}
+
+/* Contact Section */
+
+#contactDiv {
+    display: grid;
+    grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
+    grid-template-rows: 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px;
+}
+
+#contactDiv p {
+    text-align: start;
+}
+
+#contactDiv h2 {
+    grid-row-start: 1;
+    grid-column-start: 1;
+    grid-column-end: 10;
+}
+
+#contactDiv h5 {
+    margin: 25px 0px 0px 0px;
+}
+
+#contactLeftSide {
+    grid-row-start: 3;
+    grid-column-start: 1;
+    grid-column-end: 6;
+}
+
+#contact_us {
+    grid-column-start: 7;
+    grid-column-end: 11;
+    grid-row-start: 3;
+    width: 90%; 
+    height: fit-content;
+    padding: 20px;
+    max-width: 500px;
+    background-color: #00000062;
+    border-radius: 5px;
+}
+
+
+#contact_us input, form button {
+    margin: 10px 5%;
+    border-radius: 5px;
+    height: 2rem;
+    width: 85%;
+}
+
+form textarea {
+    width: 85%;
+    margin: 10px 5%;
+}
+
+
+/* Footer Section */
+
+footer {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.footerDiv {
+    text-align: center;
+}
+
+
+
+@media (min-width: 1180px) {
+    .projectImg  {
+        width: 500px;
+        height: 280px;
+        object-fit: contain;
+    }
+    
+    #projectTwo img {
+        position: relative;
+        right: 0px;
+    }
+}
+
+
+/* For Big  Screen Laptops */
+@media (min-width: 1660px) {
+    #projectTwo .projectDetails {
+        grid-column-start: 3;
+        grid-column-end: 5;
+        grid-row-start: 1;
+        grid-row-end: 5;
+    }
+}
+
+
+@media (min-width: 1660px) {
+    #projectDiv {
+        margin: auto;
+        width: 80%;
+    }
+}
+
+
+/* For Tablets/ Ipads */
+@media (max-width: 950px) {
+    .projectImg  {
+        width: 300px;
+        height: 200px;
+        object-fit: contain;
+    }
+}
+
+
+@media (max-width: 810px) {
+
+    /* Time Section */
+    #timeDiv {
+        margin-top: 120px;
+
+    }
+
+        .project_section > div {
+            margin: auto 10px;
+        }
+
+    #hero h1, #hero h3 {
+        text-align: center;
+    }
+
+    .heroChild {
+        width: 100%;
+    }
+
+    .heroChild p, .heroChild h3, .heroChild .my {
+        text-align: center;
+    }
+
+        .heroImg {
+            width: 450px;
+            height: 450px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .image {
+            float: none;
+            display: flex;
+            justify-content: center;
+            width: 100%;
+        }
+
+        
+            .about-me {
+                width: 100%;
+                text-align: center;
+            }
+
+            .myjob {
+                display: flex;
+                justify-content: center;
+            }
+
+            #aboutImage {
+                float: none;
+                display: flex;
+                justify-content: center;
+            }
+
+
+            .section {
+                margin-top: 10px;
+            }
+
+            .project_section {
+                margin-left: auto;
+                margin-right: auto;
+                display: block;
+                width: 80%;
+                margin-bottom: 10px;
+            }
+
+            .project_section > * {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                
+            }
+
+}
+
+
+/* For phone screens */
+@media  (max-width: 720px) {
+html {
+    margin: 0px 10px;
+}  
+    body {
+        width: 100%;
+        margin: 5px 0px;
+    }
+
+        #subBody {
+            margin: 0% 0%;
+        }
+
+    
+        /* Time Section */
+        #timeDiv {
+            margin-top: 80px;
+            float: right;
+            position: relative;
+            text-align: right;
+            font-size: 1rem;
+        }
+
+         #timeDiv div, #timeDiv p {
+            margin-right: 0px;
+            margin: 0px;
+        }
+
+        
+        #timeDiv #hoverDateSection {
+            
+            padding: 20px 10px;
+            background-color: rgba(22, 22, 22, 0.63);
+            width: 150px;
+        }
+
+        .content {
+            margin-left: auto;
+        }
+
+        header {
+            margin: 0%;
+            padding: 1% 0%;
+        }
+
+        #header {
+            margin: 0%;
+            padding: 0%;
+            position: fixed;
+            top: 0px;
+            z-index: 1;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            border-bottom-style: none;
+        }
+
+    .namm {
+        text-align: center;
+    }
+
+        #header .myname {
+            margin: 0px; 
+            width: 100%;
+            text-align: center;
+            position: relative;
+            font-size: 30px;
+        }
+    
+        .myname {
+            margin: 0px;
+            padding: 2px;
+            padding-top: 4px;
+            padding-right: 0px;
+            width: 100%;
+            position: relative;
+            left:0px ;
+            top:0px ;
+            font-size: 30px;
+        }
+
+     /* Sidebar Section */
+
+    .leftheader {
+        display: block;
+        box-shadow: -5px 5px 2px black;
+        z-index: +1;
+        position: absolute;
+        left: -50%;
+        top: 0px;
+        background-color: #414040;
+        transition: left .5s ease;
+        width: 50%;
+        height: 80dvh;
+    }
+
+    .leftheader.show {
+    left: 0; /* When active, move it into view */
+    }
+
+    .leftheader.hide {
+        left: -50%; /* Move it out of view when hidden */
+    }
+/* Hamburger Section */
+
+    #hmbgrIcon {
+        display: block;
+    }
+   
+
+    li {
+        margin: 10px; 
+        padding: 5px 5px;
+        border-radius: 5px;
+    }
+
+    li #themeBox {
+        position: absolute;
+        right: 0px;
+    }
+
+
+    .leftheader > button {
+        display: inline;
+        color: rgba(206, 206, 209, 0.897);
+        background-color: rgba(175, 175, 174, 0.836);
+        transition: 1s;
+    }
+  
+    .leftheader > ul {
+        display: block;
+       
+    }
+        .about-me {
+            width: auto;
+            margin-left: px; margin-right: 5px;
+        }
+
+        .image {
+            float: none;
+            position: relative;
+            left: auto;
+            right: auto;
+            top: 0px;
+        }
+
+        .heroImg {
+             width: 300px;
+            height: 300px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+
+        #aboutImage {
+                float: none;
+                display: flex;
+                justify-content: center;
+            }
+
+        .text {
+            margin-top: 200px;
+            margin-left: 5px;
+            margin-right: 5px;
+        }
+
+
+        /* Project Section */
+        #projectDiv h2 {
+            text-align: center;
+        }
+
+        .project_section {
+            display: block;
+        }
+
+         .project_section > div {
+            margin: auto 10px;
+        }
+
+        .projectImg  {
+            width: 300px;
+            height: 180px;
+            object-fit: contain;
+            display: flexbox;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        #projectOne img, #projectTwo img  {
+           margin-top: 50px;
+           margin-left: auto;
+           margin-right: auto;
+        }
+
+
+        /* Contact Section */
+        #contactDiv {
+            display: block;
+            text-align: center;
+        }
+        #contactDiv #contact_us {
+            margin: 10px auto;
+        }
+        #contactDiv p {
+            margin: auto 4px;
+            text-align: center;
+        }
+
+        footer {
+            font-size: .8rem;
+        }      
+}
+
+
+@media  (max-width: 330px) {
+     /*   .projectImg  {
+            width: 400px;
+            height: 220px;
+            object-fit: contain;
+    } */
+
+     .heroImg {
+            width: 250px;
+            height: 250px;
+            margin: auto;
+     }
+
+    .projectImg  {
+        width: 300px;
+        height: 220px;
+        object-fit: contain;
+    }
+}
+
+    
