@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Ekanem Ekanem</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css\portfolio.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/jpg" href="images/me and my laptop.jpg">
+
+</head>
+
+<body>
+    <header class="header" id="header">
+        <div class="myname">
+            <a href="//" class="namm">
+                <span style="color: aqua;" id="name-one">Ekanem</span>
+                <span id="name-two">Ekanem</span>
+            </a>
+        </div>
+
+        <div id="hamBgercontainer">
+            <label id="hmbgrIcon" for="hmbgerCheckbox">
+                <img style="width: 25px;" src="images\Hamburger.svg.png" alt="hambuger button">
+            </label>
+            <input type="checkbox" id="hmbgerCheckbox">
+        </div>
+        <div class="leftheader">
+            <ul>
+                <li style="position: relative;">
+                    <input type="checkbox" id="themeBox">
+                    <label for="themeBox" id="themeBoxLogo">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-brightness-high-fill"
+                        viewBox="0 0 16 16">
+                        <path
+                            d="M12 8a4 4 0 1 1-8 0 4 4 0 0 1 8 0M8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0m0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13m8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5M3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8m10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0m-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0m9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707M4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708" />
+                    </svg>
+                    </label> 
+                    <label id="themeBoxText">Click to change theme</label>
+                </li>
+
+                <li><a href="#timeDiv"  class="navbar" id="navbar">Home</a></li>
+                <li><a href="#about" class="navbar">About</a></li>
+                <li><a href="#projectDiv" class="navbar">Projects</a></li>
+                <li><a href="#services" class="navbar">Services</a></li>
+                <li><a href="#portfolio" class="navbar">Porfolio</a></li>
+                <li><a href="#contactDiv" class="navbar">Contacts</a></li>
+
+            </ul>
+        </div>
+    </header>
+    <div id="subBody">
+        <!-- Time Segment -->
+        <div id="timeDiv">
+            <!-- Segment for Weekday -->
+            <p id="weekdayId"></p>
+
+            <!-- Segment for time display -->
+            <div>
+                <span id="timeHr"></span>:<span id="timeMin"></span>:<span id="timeSec"></span><br>
+            </div>
+
+            <!-- Segment for date -->
+            <div>
+                <span id="dateDay"></span> / <span id="dateMonth"></span> / <span id="dateYear"></span>
+            </div>
+
+            <!-- Hover Date -->
+            <div id="hoverDateSection">
+                <span id="hoverDate"></span><span id="dateSuffix"></span> of <span id="hoverMonth"></span>, <span
+                    id="hoverYear"></span>
+            </div>
+        </div> <br> <br>
+        <!-- End of Time Div -->
+
+
+        <div class="content">
+
+            <div id="hero">
+                <div class="image" class="heroChild">
+                    <img class="heroImg"
+                        src="images\me-and-my-laptop.jpg">
+                </div>
+
+                <div class="heroChild" id="heroChild2">
+                    <h3>Hello, I am</h3>
+                    <div class="name">
+                        <h1 id="fullnameId"></h1>
+                    </div>
+
+                    <div class="myjob">
+                        <h3 class="my" style="margin-right: 4px;">and I am <span style="color: rgb(0, 255, 255);"
+                                id="career">web developer</h3>
+                        </h3>
+                    </div>
+
+                    <div class="about-me">
+                        <p>I am passionate about the web and one of the ways to show that is by me having a career in
+                            web development.
+                            I have studied basic HTML/CSS and Bootstrap. I am currrently studying JavaScript.
+                            After this, I wish to advance to React.js and the rest.
+                            This is my portfolio website.
+                            Join me on my journey as I set to become a fullstack developer.
+                        </p>
+
+                        <button>Download CV</button>
+                    </div>
+                </div>
+            </div><br><br><br>
+
+
+
+
+            <!-- About Section -->
+            <h2>ABOUT</h2>
+            <div id="about">
+                <img class="heroImg" id="aboutImage" 
+                    src="images\workspace.jpeg" alt="my-orkspace"><br>
+                <div>
+                    <p>A Backend/Fullstack Web Developer. A tech Savvy with loads of experiences in web development. Started programming in early
+                        2023.
+                        Worked for Flutterwave Incoperated in 2021 and Palmpay in 2022 as Brand Ambassador and Agent Supervisor,
+                        respectively.
+                        From the work experince, gathered knowledge of the web, web applications, and how they work.
+                    </p><br>
+
+
+                    <h4>Technologies</h4>
+                    <div id="technologiesDiv">
+
+                        <div>
+                            <p>JavaScript (ES6+)</p>
+                            <p>NodeJS</p>
+                            <p>VueJS</p>
+                            <p>ReactJS</p>
+                        </div>
+
+                        <div style="margin-left: 20px;">
+                            <p>HTML5</p>
+                            <p>CSS</p>
+                            <p>Bootstrap</p>
+                            <p>Tailwind</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <hr><br>
+
+
+            <!-- Projects Section -->
+            <div id="projectDiv">
+                <h2> FEATURED PROJECTS</h2>
+
+                <!-- First Project -->
+                <div class="section" id="projectOne">
+                    <div class="project_section">
+                        <img class="projectImg"
+                            src="images\responsive_design.jpg"
+                            alt="Responsive Web Design image">
+                        <div class="projectDetails">
+                            <h3>Fola Ankara Store</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis ipsa rerum harum
+                                totam tempora dolores ex placeat similique quae velit, magnam id consequuntur a cumque
+                                quod mollitia molestias qui doloremque sapiente omnis! Magni eaque asperiores ipsam.
+                                Vitae magnam ab rerum id ipsam, rem accusantium ducimus doloribus aut repellendus, in
+                                expedita.
+                            </p>
+                            <a href="//">Website</a>
+                        </div>
+
+                    </div>
+                </div><br> <br>
+
+                <!-- Second Project -->
+                <div class="section" id="projectTwo">
+                    <div class="project_section">
+                        <img class="projectImg"
+                            src="images\responsive_design2.png"
+                            alt="Responsive Web Design image 2">
+                        <div class="projectDetails">
+                            <h3>Femi Global Data Mining Services</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis ipsa rerum harum
+                                totam tempora dolores ex placeat similique quae velit, magnam id consequuntur a cumque
+                                quod mollitia molestias qui doloremque sapiente omnis! Magni eaque asperiores ipsam.
+                                Vitae magnam ab rerum id ipsam, rem accusantium ducimus doloribus aut repellendus, in
+                                expedita.
+                            </p>
+                            <a href="//">Website</a>
+                        </div>
+
+                    </div>
+                </div><br> <br>
+            </div>
+            <!-- End of Projects Section -->
+
+
+            <div id="contactDiv">
+                <h2>CONTACT US</h2>
+                <!-- <p>Contact us through any of the following methods. We will respond to you as soon as possible.</p> -->
+
+                <div id="contactLeftSide">
+
+                    <div class="contact_child">
+                        <h5><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                class="bi bi-envelope" viewBox="0 0 16 16">
+                                <path
+                                    d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z" />
+                            </svg> Email
+                        </h5>
+                        <p>olympusberry@gmail.com</p>
+                    </div>
+
+                    <div class="contact_child">
+                        <h5> <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                class="bi bi-house" viewBox="0 0 16 16">
+                                <path
+                                    d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293zM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5z" />
+                            </svg>Address</h5>
+                        <p>01, Olubenga Street</p>
+                        <p>Maroko</p>
+                        <p>Lekki Phase II</p>
+                        <P>Lagos</P>
+                    </div>
+
+                    <div class="contact_child">
+                        <h5><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                class="bi bi-telephone" viewBox="0 0 16 16">
+                                <path
+                                    d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z" />
+                            </svg>Whatsapp/Call</h5>
+                        <p>+2348100214671</p>
+                    </div>
+                </div>
+
+
+                <div class="contact_child" id="contact_us">
+                    <form>
+                        <input id="MSName" type="text" placeholder="Your Name" required><br>
+
+                        <input id="MSEmailAddress" type="email" placeholder="Your Email Address" required><br>
+
+                        <input id="MSPhoneNum" type="number" placeholder="Your Phone Number"><br>
+
+                        <textarea id="MSText" rows="5"  placeholder="Your Message" required></textarea>
+
+                        <button type="submit" onclick="getMailDetails()">Send us an email</button><br>
+                    </form>
+
+                </div>
+
+            </div>
+
+            <div id="jokesDiv">
+                <p> Want to hear a joke?
+                    <button onclick="getJokes()">Yes</button>
+                </p>
+                <p id="jokeSetup"></p>
+                <p id="jokePunchline"></p>
+                
+            </div>
+
+        </div><br>
+
+        
+        <!-- Homepage Section -->
+        <a class="homepage" href="index.html">Homepage</a><br><br>
+        <hr>
+
+        <footer>
+            <div class="footerDiv" id="socials">
+                <h3>Socials</h3>
+
+                <P><a>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-facebook"
+                            viewBox="0 0 16 16">
+                            <path
+                                d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951" />
+                        </svg>
+                    </a>
+                </P>
+
+                <p><a>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-twitter-x"
+                            viewBox="0 0 16 16">
+                            <path
+                                d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z" />
+                        </svg>
+                    </a> 
+                </p>
+
+                <p><a>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-linkedin"
+                            viewBox="0 0 16 16">
+                            <path
+                                d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z" />
+                        </svg>
+                    </a>
+                </p>
+
+                <p><a>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-whatsapp"
+                            viewBox="0 0 16 16">
+                            <path
+                                d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232" />
+                        </svg>
+                    </a>
+                </p>
+            </div>
+
+
+            <div class="footerDiv">
+                <h3>Navigate</h3>
+                <p>
+                    <a>Home</a>
+                </p>
+                
+                <p>
+                    <a>About</a>
+                </p>
+
+                <p>
+                    <a>Project</a>
+                </p>
+
+                <p>
+                    <a>Contact Us</a>
+                </p>
+            </div>
+
+
+            <div class="footerDiv">
+                <h3>Projects</h3>
+                <p>
+                    <a>Fola Ankara Store</a>
+                </p>
+
+                <p>
+                    <a>Femi GDM Services</a>
+                </p>
+            </div>
+        </footer><br><br>
+
+    </div>
+
+    <p>Note: This website is best viewed in dark-theme mode.</p>
+    <p>&copy; 2023 Webbie Materials. All rights reserved.</p><br><br>
+
+
+
+    <script src="javascript/portfolio.js"></script>
+</body>
+
+</html>
