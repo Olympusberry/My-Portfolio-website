@@ -16,9 +16,20 @@ body {
 
 a {
     cursor: pointer;
+    color: inherit;
+    text-decoration: none;
 }
+
 a:hover {
     text-decoration: underline;
+}
+
+a svg {
+    background-color: transparent;
+}
+
+li a:hover {
+    text-decoration: none;
 }
 
 p {
@@ -67,7 +78,7 @@ p::selection {
     }
 
 
-    /* Left Header Section */
+/* Left Header Section */
     .leftheader {
         display: flex;
         transition: .2s;
@@ -138,18 +149,12 @@ p::selection {
         cursor: pointer;
     }
 
-    a {
-        text-decoration: none;
-    }
-
-
     .namm {
         font-family: 'GreatVibes-Regular', sans-serif;
         color: white;
         font-weight: bold;
         font-size: 3rem;
     }
-
 
 
 /* Time Section */
@@ -445,6 +450,10 @@ footer {
         width: 300px;
         height: 200px;
         object-fit: contain;
+    }
+
+    .heroImg {
+        opacity: 1; /* Makes the image shines with hovering */
     }
 }
 

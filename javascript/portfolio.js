@@ -6,6 +6,7 @@ const navbar = document.querySelectorAll(".navbar");
 const leftHeader = document.querySelector(".leftheader");
 const nameOne = document.getElementById("name-one");
 const nameTwo = document.getElementById("name-two");
+const socialSVG = document.querySelectorAll("a svg");
 
 
 //Theme Section
