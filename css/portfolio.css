@@ -140,13 +140,42 @@ p::selection {
         left: 15px;
     }
 
-    #hmbgerCheckbox {
-        display: none;
-    }
 
     #hmbgrIcon {
+            display: inline-block;
+            cursor: pointer;
+            display: none;
+        }
+
+        .bar1, .bar2, .bar3 {
+            width: 35px;
+            height: 4px;
+            background-color: #e6e6e6;
+            margin: 6px 0;
+            transition: 0.4s;
+        }
+
+        /* Checkbox input hidden */
+        input[type="checkbox"] {
+            display: none; /* Hide the checkbox */
+        }
+
+        /* Styles for when the checkbox is checked */
+        input[type="checkbox"]:checked ~ #hmbgrIcon .bar1 {
+            transform: translate(0, 11px) rotate(-45deg);
+        }
+
+        input[type="checkbox"]:checked ~ #hmbgrIcon .bar2 {
+            opacity: 0;
+        }
+
+        input[type="checkbox"]:checked ~ #hmbgrIcon .bar3 {
+            transform: translate(0, -11px) rotate(45deg);
+        }
+
+
+    #hmbgerCheckbox {
         display: none;
-        cursor: pointer;
     }
 
     .namm {
