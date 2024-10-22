@@ -22,15 +22,15 @@ themeBoxLogo.addEventListener("mouseout", () => {
 
 
 function applyTheme(isLightTheme) {
-    document.body.style.backgroundColor = isLightTheme ? "#adadad" : "#000000d5";
-    document.body.style.color = isLightTheme ? "#000000d5" : "#adadad";
+    document.body.style.backgroundColor = isLightTheme ? "#e6e6e6" : "#000000d5";
+    document.body.style.color = isLightTheme ? "#000000d5" : "#e6e6e6";
     header.style.backgroundColor = isLightTheme ? "aqua" : "#292929e8";
     nameOne.style.color = isLightTheme ? "black" : "aqua";
-    nameTwo.style.color = isLightTheme ? "black" : "#adadad";
+    nameTwo.style.color = isLightTheme ? "black" : "#e6e6e6";
     careers.style.color = isLightTheme ? "black" : "aqua";
 
     navbar.forEach(element => {
-        element.style.color = isLightTheme ? "black" : "#adadad";
+        element.style.color = isLightTheme ? "black" : "#e6e6e6";
     });
 
     leftHeader.style.backgroundColor = isLightTheme ? "aqua" : "";
@@ -223,6 +223,19 @@ function getDateSuffix(date) {
 
 // Initial call to start the time updates
 updateTime();
+
+//Download CV Section
+document.getElementById('downloadCVBtn').addEventListener('click', function () {
+    // Create an anchor element
+    const link = document.createElement('a');
+    // Set the file URL (replace 'file.pdf' with the actual file path)
+    link.href = 'docs/Ekanem_Ekanem_Resume_2024.pdf';
+    link.target = "_blank";
+    // Set the download attribute with a filename
+    link.download = 'Ekanem_Ekanem_Resume_2024.pdf';
+    // Trigger the download
+    link.click();
+});
 
 
 //Contact Section

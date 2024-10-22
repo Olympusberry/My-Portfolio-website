@@ -9,13 +9,16 @@ html {
 
 body {
     background-color: #000000d5;
-    color: #adadad;
+    color: #e6e6e6;
     font-family: 'Nunito', sans-serif;
     transition: .2s;
 } 
 
 a {
     cursor: pointer;
+}
+a:hover {
+    text-decoration: underline;
 }
 
 p {
