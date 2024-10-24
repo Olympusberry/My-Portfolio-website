@@ -75,7 +75,9 @@ p::selection {
     header .myname a:hover {
         color: aqua;
         background-color: rgba(255, 255, 255, 0);
+        text-decoration: none;
     }
+
 
 
 /* Left Header Section */
@@ -184,6 +186,12 @@ p::selection {
         font-weight: bold;
         font-size: 3rem;
     }
+
+    .namm:hover {
+        font-family: 'GreatVibes-Regular', sans-serif;
+        color: aqua;
+    }
+
 
 
 /* Time Section */
@@ -295,7 +303,7 @@ button:hover, .homepage:hover, .section a:hover {
 }
 
 button:active {
-    background-color:rgb(65, 65, 65);
+    background-color:#414141;
 }
 
 
@@ -484,6 +492,46 @@ footer {
     .heroImg {
         opacity: 1; /* Makes the image shines with hovering */
     }
+
+
+/* Changing hovering effects to active effects */
+    a:hover {
+        text-decoration: none;
+    }
+
+    a:active {
+        text-decoration: underline;
+    }
+
+    li svg:hover {
+        background-color: transparent;   
+    }
+
+    li svg:active {
+        background-color: rgba(0, 0, 0, 0.445);   
+    }
+
+
+    button:hover, .homepage:hover, .section a:hover {
+        box-sizing: border-box;
+        background-color:aqua;
+        color: black;
+        border-style: solid;
+        border-color: aqua;
+        padding: 8px 10px 12px 10px;
+    }
+
+    button:active, .homepage:active, .section a:active {
+        box-sizing: border-box;
+        background-color:black;
+        color: aqua;
+        border-style: solid;
+        border-color: aqua;
+        padding: 8px 10px 12px 10px;
+    }
+    
+
+
 }
 
 
