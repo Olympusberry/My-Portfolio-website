@@ -1,3 +1,5 @@
+import '../css/portfolio.css'
+
 let themeBox = document.getElementById("themeBox");
 const header = document.getElementById("header");
 const heroImg = document.getElementsByClassName("heroImg");
@@ -268,19 +270,21 @@ function getMailDetails() {
 
 
 async function getJokes() {
-    const response = await fetch(`https://official-joke-api.appspot.com/random_joke`);
-
     try {
+        const response = await fetch(`https://official-joke-api.appspot.com/random_joke`);
         if (!response.ok) {
             throw new Error("Error: Could not fetch data");
         }
-        const jokeObject = await response.json();
+        /* const jokeObject = await response.json();
         const jokeSetup = document.getElementById("jokeSetup");
         const jokePunchline = document.getElementById("jokePunchline");
        
          
         jokeSetup.textContent = jokeObject.setup;
-        jokePunchline.textContent = jokeObject.punchline;
+        jokePunchline.textContent = jokeObject.punchline; */
     }
     catch (error) { console.error(error) };
 }
+
+/* document.querySelector('#jokesDiv button').addEventListener('click', getJokes);
+ */
