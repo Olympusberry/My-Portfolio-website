@@ -23,18 +23,18 @@ themeBoxLogo.addEventListener("mouseout", () => {
 
 
 function applyTheme(isLightTheme) {
-    document.body.style.backgroundColor = isLightTheme ? "#e6e6e6" : "#000000d5";
-    document.body.style.color = isLightTheme ? "#000000d5" : "#e6e6e6";
-    document.querySelector('.bar1').style.backgroundColor = isLightTheme ? "black" : "#e6e6e6";
-    document.querySelector('.bar2').style.backgroundColor = isLightTheme ? "black" : "#e6e6e6";
-    document.querySelector('.bar3').style.backgroundColor = isLightTheme ? "black" : "#e6e6e6";
+    document.body.style.backgroundColor = isLightTheme ? "#e6e6e6" : "#121212";
+    document.body.style.color = isLightTheme ? "#121212" : "#e6e6e6";
+    document.querySelector('.bar1').style.backgroundColor = isLightTheme ? "#121212" : "#e6e6e6";
+    document.querySelector('.bar2').style.backgroundColor = isLightTheme ? "#121212" : "#e6e6e6";
+    document.querySelector('.bar3').style.backgroundColor = isLightTheme ? "#121212" : "#e6e6e6";
     header.style.backgroundColor = isLightTheme ? "aqua" : "#292929e8";
-    nameOne.style.color = isLightTheme ? "black" : "aqua";
-    nameTwo.style.color = isLightTheme ? "black" : "#e6e6e6";
-    careers.style.color = isLightTheme ? "black" : "aqua";
+    nameOne.style.color = isLightTheme ? "#121212" : "aqua";
+    nameTwo.style.color = isLightTheme ? "#121212" : "#e6e6e6";
+    careers.style.color = isLightTheme ? "#121212" : "aqua";
 
     navbar.forEach(element => {
-        element.style.color = isLightTheme ? "black" : "#e6e6e6";
+        element.style.color = isLightTheme ? "#121212" : "#e6e6e6";
     });
 
     leftHeader.style.backgroundColor = isLightTheme ? "aqua" : "";
