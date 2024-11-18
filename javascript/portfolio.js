@@ -244,7 +244,6 @@ document.getElementById('downloadCVBtn').addEventListener('click', function () {
 
 //Contact Section
 
-
 function getMailDetails() {
     //Object to store mail sent by a visitor
     const mailDetails = {
@@ -268,6 +267,7 @@ function getMailDetails() {
 
 
 async function getJokes() {
+    
     try {
         const response = await fetch(`https://official-joke-api.appspot.com/random_joke`);
         if (!response.ok) {
@@ -276,10 +276,16 @@ async function getJokes() {
         const jokeObject = await response.json();
         const jokeSetup = document.getElementById("jokeSetup");
         const jokePunchline = document.getElementById("jokePunchline");
-       
-         
+        
         jokeSetup.textContent = jokeObject.setup;
         jokePunchline.textContent = jokeObject.punchline;
+
+
+        const jokesQuestion = document.querySelector('#jokesDiv p span').style.display = 'none';;
+        
+        const jokesBtns = document.querySelectorAll('#jokesDiv button');
+        Array.from(jokesBtns)[0].style.display = 'none';
+        Array.from(jokesBtns)[1].style.display = 'inline';
     }
     catch (error) { console.error(error) };
 }
