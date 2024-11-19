@@ -380,8 +380,14 @@ button:active {
     border-radius: 10px;
 }
 
-/* Contact Section */
+#anotherJoke button {
+    opacity: 0;
+    transition: 1s;
+}
 
+
+
+/* Contact Section */
 #contactDiv {
     display: grid;
     grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;

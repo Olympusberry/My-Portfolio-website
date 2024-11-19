@@ -285,7 +285,11 @@ async function getJokes() {
         
         const jokesBtns = document.querySelectorAll('#jokesDiv button');
         Array.from(jokesBtns)[0].style.display = 'none';
-        Array.from(jokesBtns)[1].style.display = 'inline';
+        setTimeout(() => {
+            document.querySelector('#anotherJoke button').style.opacity = 1;
+
+        }, 5000)
+        
     }
     catch (error) { console.error(error) };
 }
