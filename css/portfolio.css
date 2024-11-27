@@ -24,6 +24,10 @@ a:hover {
     text-decoration: underline;
 }
 
+#downloadCV-a:hover {
+    text-decoration: none;
+}
+
 a svg {
     background-color: transparent;
 }

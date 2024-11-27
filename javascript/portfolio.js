@@ -228,18 +228,6 @@ function getDateSuffix(date) {
 // Initial call to start the time updates
 updateTime();
 
-//Download CV Section
-document.getElementById('downloadCVBtn').addEventListener('click', function () {
-    // Create an anchor element
-    const link = document.createElement('a');
-    // Set the file URL (replace 'file.pdf' with the actual file path)
-    link.href = 'docs/Ekanem_Ekanem_Resume_2024.pdf';
-    link.target = "_blank";
-    // Set the download attribute with a filename
-    link.download = 'Ekanem_Ekanem_Resume_2024.pdf';
-    // Trigger the download
-    link.click();
-});
 
 
 //Contact Section
